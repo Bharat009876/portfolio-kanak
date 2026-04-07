@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="800" viewBox="0 0 800 800" fill="none">
+  <rect width="800" height="800" fill="#F8F2E8"/>
+
+  <g opacity=".22" stroke="#285D9A" fill="none">
+    <circle cx="130" cy="120" r="86" stroke-width="5"/>
+    <circle cx="130" cy="120" r="62" stroke-width="2"/>
+    <path d="M90 120h80M130 80v80" stroke-width="2"/>
+  </g>
+
+  <g opacity=".2" stroke="#B24E3E" fill="none" transform="translate(380 100) rotate(-11)">
+    <rect x="-90" y="-36" width="180" height="72" rx="8" stroke-width="5"/>
+    <path d="M-70 -8h140M-58 14h116" stroke-width="4"/>
+  </g>
+
+  <g opacity=".2" stroke="#2B4F83" fill="none" transform="translate(640 220) rotate(21)">
+    <rect x="-75" y="-40" width="150" height="80" rx="6" stroke-width="4"/>
+    <path d="M-58 -12h115M-46 14h92" stroke-width="3"/>
+  </g>
+
+  <g opacity=".16" stroke="#285D9A" fill="none" transform="translate(210 420) rotate(-6)">
+    <rect x="-110" y="-46" width="220" height="92" rx="10" stroke-width="4" stroke-dasharray="7 6"/>
+    <path d="M-88 -14h168M-88 14h168" stroke-width="3"/>
+  </g>
+
+  <g opacity=".18" stroke="#B24E3E" fill="none" transform="translate(575 560) rotate(-10)">
+    <circle cx="0" cy="0" r="82" stroke-width="5"/>
+    <circle cx="0" cy="0" r="56" stroke-width="2"/>
+    <path d="M-42 0h84" stroke-width="4"/>
+  </g>
+
+  <g opacity=".14" stroke="#2B4F83" fill="none" transform="translate(470 360)">
+    <path d="M-60 0l28-22 28 22-28 22z" stroke-width="2"/>
+    <path d="M-18 0h150" stroke-width="4"/>
+    <path d="M132 0l-16-12M132 0l-16 12" stroke-width="3"/>
+  </g>
+
+  <g opacity=".22" fill="#2B4F83" font-family="Arial, sans-serif" font-size="24" font-weight="700" letter-spacing="2">
+    <text x="70" y="300" transform="rotate(-15 70 300)">BUSINESS</text>
+    <text x="540" y="115" transform="rotate(14 540 115)">GROUPS</text>
+    <text x="585" y="465" transform="rotate(-18 585 465)">FILM SHOOTS</text>
+    <text x="110" y="690" transform="rotate(-8 110 690)">FAMILY VISIT</text>
+    <text x="365" y="760" transform="rotate(6 365 760)">SCHENGEN</text>
+    <text x="605" y="700" transform="rotate(-6 605 700)">TOURIST VISA</text>
+  </g>
+
+  <g opacity=".18" fill="#B24E3E" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="1.6">
+    <text x="290" y="215" transform="rotate(-10 290 215)">DOORSTEP</text>
+    <text x="270" y="475" transform="rotate(5 270 475)">EXPRESS</text>
+    <text x="485" y="290" transform="rotate(12 485 290)">MULTI COUNTRY</text>
+  </g>
+
+  <g opacity=".09" stroke="#2B4F83" fill="none">
+    <circle cx="340" cy="620" r="26"/><circle cx="340" cy="620" r="52"/><circle cx="340" cy="620" r="78"/>
+    <circle cx="408" cy="620" r="26"/><circle cx="408" cy="620" r="52"/><circle cx="408" cy="620" r="78"/>
+    <circle cx="476" cy="620" r="26"/><circle cx="476" cy="620" r="52"/><circle cx="476" cy="620" r="78"/>
+  </g>
+</svg>

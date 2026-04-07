@@ -5,15 +5,15 @@
 :root {
   --header-height: 3.5rem;
   --hue: 210;
-  --first-color: hsl(var(--hue), 72%, 56%);
-  --first-color-alt: hsl(48, 96%, 56%);
-  --first-color-alt-2: hsl(var(--hue), 76%, 48%);
-  --first-color-light: hsl(50, 98%, 70%);
-  --title-color: hsl(240, 8%, 95%);
-  --text-color: hsl(240, 8%, 70%);
-  --text-color-light: hsl(240, 8%, 50%);
-  --body-color: hsl(240, 100%, 2%);
-  --container-color: hsl(240, 8%, 6%);
+  --first-color: hsl(var(--hue), 70%, 42%);
+  --first-color-alt: hsl(47, 92%, 55%);
+  --first-color-alt-2: hsl(var(--hue), 76%, 36%);
+  --first-color-light: hsl(46, 95%, 67%);
+  --title-color: hsl(226, 56%, 22%);
+  --text-color: hsl(224, 22%, 35%);
+  --text-color-light: hsl(224, 14%, 46%);
+  --body-color: hsl(41, 45%, 93%);
+  --container-color: hsl(42, 75%, 97%);
   --body-font: "Montserrat", sans-serif;
   --second-font: "Unbounded", sans-serif;
   --biggest-font-size: 2rem;
@@ -64,6 +64,13 @@ button {
 body {
   background-color: var(--body-color);
   color: var(--text-color);
+  background-image: url("assets/img/passport-pattern.svg"),
+                    radial-gradient(circle at 20% 15%, hsla(47, 85%, 82%, .2), transparent 38%),
+                    radial-gradient(circle at 85% 12%, hsla(210, 45%, 80%, .22), transparent 44%);
+  background-size: 620px, auto, auto;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-blend-mode: multiply, normal, normal;
+  background-attachment: fixed, fixed, fixed;
 }
 
 button {
@@ -131,7 +138,7 @@ img {
   align-items: center;
   justify-content: center;
   background-color: var(--first-color);
-  color: var(--body-color);
+  color: hsl(226, 56%, 20%);
   font-weight: var(--font-semi-bold);
   padding: 1rem 1.75rem;
   border-radius: .5rem;
@@ -190,14 +197,14 @@ button:hover ~ .cursor {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 3, .85);
+  background-color: rgba(250, 245, 234, .92);
   backdrop-filter: blur(8px);
   z-index: var(--z-fixed);
   transition: box-shadow .3s;
 }
 
 .header.scroll-header {
-  box-shadow: 0 2px 16px hsla(240, 8%, 0%, .4);
+  box-shadow: 0 2px 16px hsla(220, 24%, 30%, .12);
 }
 
 .nav {
@@ -265,7 +272,7 @@ button:hover ~ .cursor {
   height: 100%;
   background-color: var(--container-color);
   padding: 5rem 2rem 2rem;
-  box-shadow: -4px 0 24px hsla(0, 0%, 0%, .4);
+  box-shadow: -4px 0 24px hsla(220, 24%, 30%, .15);
   transition: right .35s ease;
 }
 
@@ -298,6 +305,62 @@ button:hover ~ .cursor {
   pointer-events: none;
 }
 
+.passport-stamp {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border: 2px solid hsla(225, 45%, 45%, .32);
+  color: hsla(225, 45%, 34%, .34);
+  background-color: hsla(43, 65%, 96%, .4);
+  font-family: var(--second-font);
+  font-size: .68rem;
+  letter-spacing: .08em;
+  padding: .45rem .7rem;
+  border-radius: .35rem;
+  text-transform: uppercase;
+  backdrop-filter: blur(1px);
+}
+
+.passport-stamp--1 {
+  top: 11%;
+  left: 5%;
+  transform: rotate(-18deg);
+}
+
+.passport-stamp--2 {
+  top: 7%;
+  right: 9%;
+  transform: rotate(14deg);
+  border-color: hsla(16, 70%, 46%, .34);
+  color: hsla(16, 70%, 42%, .34);
+}
+
+.passport-stamp--3 {
+  top: 31%;
+  right: 3%;
+  transform: rotate(22deg);
+}
+
+.passport-stamp--4 {
+  bottom: 20%;
+  left: 4%;
+  transform: rotate(-22deg);
+  border-color: hsla(16, 70%, 46%, .34);
+  color: hsla(16, 70%, 42%, .34);
+}
+
+.passport-stamp--5 {
+  bottom: 13%;
+  left: 26%;
+  transform: rotate(-6deg);
+}
+
+.passport-stamp--6 {
+  bottom: 10%;
+  right: 20%;
+  transform: rotate(-9deg);
+}
+
 .home__blob {
   position: absolute;
   border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
@@ -310,7 +373,7 @@ button:hover ~ .cursor {
 .home__blob-1 {
   width: 340px;
   height: 340px;
-  background: linear-gradient(135deg, hsl(48, 96%, 58%), hsl(210, 78%, 46%));
+  background: linear-gradient(135deg, hsl(47, 93%, 61%), hsl(210, 64%, 46%));
   top: 8%;
   right: -100px;
 }
@@ -318,7 +381,7 @@ button:hover ~ .cursor {
 .home__blob-2 {
   width: 220px;
   height: 220px;
-  background: linear-gradient(135deg, hsl(48, 92%, 52%), hsl(210, 72%, 42%));
+  background: linear-gradient(135deg, hsl(46, 88%, 55%), hsl(210, 58%, 40%));
   bottom: 8%;
   left: -70px;
   animation-delay: -4s;
@@ -397,7 +460,7 @@ button:hover ~ .cursor {
 }
 
 .home__headline-gradient {
-  background: linear-gradient(90deg, hsl(48, 98%, 68%), hsl(210, 86%, 60%));
+  background: linear-gradient(90deg, hsl(47, 95%, 54%), hsl(210, 72%, 46%));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -693,7 +756,7 @@ button:hover ~ .cursor {
   background-color: var(--container-color);
   border-radius: 1rem;
   overflow: hidden;
-  border: 1px solid hsla(240, 8%, 20%, .6);
+  border: 1px solid hsla(220, 35%, 48%, .22);
   max-width: 360px;
   height: auto;
   min-height: 280px;
@@ -808,7 +871,7 @@ button:hover ~ .cursor {
   padding: 1.25rem;
   background-color: var(--container-color);
   border-radius: .75rem;
-  border: 1px solid hsla(240, 8%, 18%, .8);
+  border: 1px solid hsla(220, 35%, 48%, .22);
 }
 
 .work__title {
@@ -845,7 +908,7 @@ button:hover ~ .cursor {
 .services__item {
   background-color: var(--container-color);
   border-radius: .75rem;
-  border: 1px solid hsla(240, 8%, 18%, .8);
+  border: 1px solid hsla(220, 35%, 48%, .22);
   overflow: hidden;
   margin-bottom: 1rem;
 }
@@ -936,7 +999,7 @@ button:hover ~ .cursor {
 .testimonials__card {
   flex: 0 0 min(92vw, 420px);
   background-color: var(--container-color);
-  border: 1px solid hsla(240, 8%, 18%, .8);
+  border: 1px solid hsla(220, 35%, 48%, .22);
   border-radius: .75rem;
   padding: 1.5rem;
 }
@@ -1083,8 +1146,9 @@ button:hover ~ .cursor {
 /*=============== FOOTER ===============*/
 .footer {
   padding: 2rem 0 3rem;
-  border-top: 1px solid hsla(240, 8%, 15%, .8);
+  border-top: 1px solid hsla(220, 35%, 48%, .22);
   margin-top: 2rem;
+  background-color: hsla(210, 60%, 92%, .28);
 }
 
 .footer__container {
@@ -1176,6 +1240,23 @@ button:hover ~ .cursor {
 
   .home__portrait {
     max-height: 44vh;
+  }
+
+  .passport-stamp {
+    font-size: .58rem;
+    padding: .35rem .55rem;
+    opacity: .75;
+  }
+
+  .passport-stamp--2,
+  .passport-stamp--3,
+  .passport-stamp--6 {
+    display: none;
+  }
+
+  body {
+    background-size: 460px, auto, auto;
+    background-attachment: scroll, scroll, scroll;
   }
 
   .home__bottom {
