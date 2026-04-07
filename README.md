@@ -1,6 +1,6 @@
-# Kanak Maru — Visa consultancy website
+# Kanak Maru — Visa consultant website
 
-Professional static website for **Kanak Maru** (visa consultancy / [Travelclaps](https://www.travelclaps.com)).
+Professional static website for **Kanak Maru** (visa consultant / [Travelclaps](https://www.travelclaps.com)).
 
 ## Stack
 
@@ -22,3 +22,4 @@ Works on any static host (e.g. Vercel, Netlify, GitHub Pages). No build step req
 ## Assets
 
 Place the portrait image at `assets/img/kanak.png`.
+

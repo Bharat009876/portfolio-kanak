@@ -4,11 +4,11 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3.5rem;
-  --hue: 255;
-  --first-color: hsl(var(--hue), 60%, 64%);
-  --first-color-alt: hsl(var(--hue), 80%, 56%);
-  --first-color-alt-2: hsl(var(--hue), 60%, 56%);
-  --first-color-light: hsl(var(--hue), 60%, 74%);
+  --hue: 210;
+  --first-color: hsl(var(--hue), 72%, 56%);
+  --first-color-alt: hsl(48, 96%, 56%);
+  --first-color-alt-2: hsl(var(--hue), 76%, 48%);
+  --first-color-light: hsl(50, 98%, 70%);
   --title-color: hsl(240, 8%, 95%);
   --text-color: hsl(240, 8%, 70%);
   --text-color-light: hsl(240, 8%, 50%);
@@ -310,7 +310,7 @@ button:hover ~ .cursor {
 .home__blob-1 {
   width: 340px;
   height: 340px;
-  background: linear-gradient(135deg, hsl(265, 65%, 55%), hsl(230, 70%, 45%));
+  background: linear-gradient(135deg, hsl(48, 96%, 58%), hsl(210, 78%, 46%));
   top: 8%;
   right: -100px;
 }
@@ -318,7 +318,7 @@ button:hover ~ .cursor {
 .home__blob-2 {
   width: 220px;
   height: 220px;
-  background: linear-gradient(135deg, var(--first-color-alt), hsl(280, 55%, 42%));
+  background: linear-gradient(135deg, hsl(48, 92%, 52%), hsl(210, 72%, 42%));
   bottom: 8%;
   left: -70px;
   animation-delay: -4s;
@@ -397,7 +397,7 @@ button:hover ~ .cursor {
 }
 
 .home__headline-gradient {
-  background: linear-gradient(90deg, hsl(265, 85%, 72%), hsl(220, 90%, 70%));
+  background: linear-gradient(90deg, hsl(48, 98%, 68%), hsl(210, 86%, 60%));
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -447,7 +447,7 @@ button:hover ~ .cursor {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 1.5rem;
   margin-top: 2rem;
   padding-top: 1rem;
@@ -1132,6 +1132,105 @@ button:hover ~ .cursor {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .section {
+    padding-block: 3.5rem 1rem;
+  }
+
+  .section__title {
+    margin-bottom: 2rem;
+    font-size: 1.35rem;
+    line-height: 1.35;
+  }
+
+  .container {
+    margin-inline: 1rem;
+  }
+
+  .home {
+    min-height: auto;
+    padding-top: calc(var(--header-height) + 1rem);
+    padding-bottom: 1rem;
+  }
+
+  .home__layout {
+    gap: 1.25rem;
+  }
+
+  .home__name {
+    font-size: 2rem;
+  }
+
+  .home__headline {
+    font-size: 1.6rem;
+  }
+
+  .home__subline {
+    font-size: .8rem;
+    max-width: 18rem;
+  }
+
+  .home__portrait-wrap {
+    max-width: 220px;
+  }
+
+  .home__portrait {
+    max-height: 44vh;
+  }
+
+  .home__bottom {
+    margin-top: 1rem;
+    padding-top: .5rem;
+  }
+
+  .home__cv {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+  }
+
+  .about__content {
+    text-align: left;
+  }
+
+  .about__credentials {
+    padding: 1rem;
+  }
+
+  .expertise-marquee__card,
+  .projects__card {
+    flex-basis: min(92vw, 320px);
+    max-width: 320px;
+    min-height: 250px;
+  }
+
+  .work__tabs {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .work__button {
+    width: 100%;
+  }
+
+  .services__header {
+    padding: 1rem;
+  }
+
+  .services__content {
+    padding: 0 1rem 1rem;
+  }
+
+  .testimonials__card {
+    flex-basis: min(92vw, 360px);
+    padding: 1.1rem;
+  }
+
+  .contact__grid {
+    gap: 1rem;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .contact__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1203,3 +1302,4 @@ button:hover ~ .cursor {
     -webkit-mask-image: none;
   }
 }
+
